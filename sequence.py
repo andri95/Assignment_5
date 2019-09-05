@@ -2,17 +2,37 @@
 
 n = int(input("Enter the length of the sequence: ")) # Do not change this line
 
-# Empty variable to hold numbers of sequence
+# Variables that hold initial 3 numbers of seq
 
-number = 1
+num_one = 1
+num_two = 2
+num_three = 3
 
-# for loop starts as 1, ends as n
-for x in range(1, n + 1):
+# Set counter as 3
 
-    # Print out result
+counter = 3
 
-    print(number)
+# Print out initial numbers
 
-    # Add x to number variable
+print(num_one)
+print(num_two)
+print(num_three)
 
-    number += x
+# While loop to print out n numbers of sequence
+
+while counter < n:
+
+    # sum of all 3 numbers
+    sum_all = num_one + num_two + num_three
+
+    print(sum_all)
+
+    # Increment counter by one
+
+    counter += 1
+
+    # Rotate values of variables
+
+    num_one = num_two
+    num_two = num_three
+    num_three = sum_all
